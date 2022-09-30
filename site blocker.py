@@ -12,22 +12,6 @@ Websites = Text(root, font='arial 12 bold', height='2', width='40')
 Websites.place(x=140, y=60)
 
 
-
-
-# def Blocker():
-#     web_lists = Websites.get(1.0, END)
-#     Website = list(web_lists.split(","))
-#     with open(ho_pa , 'r+') as host_file:
-#         file_cont = host_file.read()
-#         for web in Website:
-#             if web in file_cont:
-#                 Label(root, text="already blocked", font='arial 12 bold').place(x=200, y=200)
-#                 pass
-#             else:
-#                 host_file.write(ip_address + " " + web + '\n')
-#                 Label(root, text='Blocked', font="arial 12 bold").place(x=230, y=200)
-
-
 def Blocker():
     website_lists = Websites.get(1.0,END)
     Website = list(website_lists.split(","))
